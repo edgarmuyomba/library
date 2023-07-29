@@ -33,14 +33,16 @@
     <div class="formDiv" style="display: none;">
         <div class="form">
             <img src="icons/book-open-outline.svg" style="width: 100px;"/>
+            <div class="error" style="display: none;">The book already exists in the library.</div>
             <form action="">
-                <input type="text" placeholder="title" required>
-                <input type="text" placeholder="author" required>
-                <input type="number" placeholder="pages" required>
+                <input id="title" type="text" placeholder="title" required>
+                <input id="author" type="text" placeholder="author" required>
+                <input id="pages" type="number" placeholder="pages" required>
                 <input type="submit">
             </form>
         </div>
     </div>
+    <div class="footer"><span>©<a href="https://github.com/edgarmuyomba" target="_blank">Edgar Muyomba</a></span></div>
 </body>
 
 </html>
