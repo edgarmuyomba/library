@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto-regular-webfont.woff') format('woff') url('fonts/roboto-regular-webfont.woff2') format('woff2');
+}
+
+* {
+    font-family: 'roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+}
+
+.nav {
+    padding: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav p {
+    margin: 0;
+}
+
+.nav p.count {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 15px;
+    color: green;
+}
+
+.nav p.count::before {
+    content: "•";
+}
+
+.nav p.count::after {
+    content: " book(s)";
+}
+
+.main {
+    position: relative;
+    top: 80px;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    padding: 8px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+span > button {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span > button:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+.main > .books {
+    margin: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    gap: 16px;
+    justify-content: center;
+}
+
+.book {
+    background-color: white;
+    border-radius: 5px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 0;
+}
+
+.book .author {
+    color: grey;
+    margin: 0;
+}
+
+.book .pages::after {
+    content: " pages";
+}
+
+.book>.status {
+    margin-bottom: 8px;
+    background-color: lightcyan;
+    border: 1.5px solid mediumturquoise;
+    color: turquoise;
+}
+
+.book > .status:hover {
+    background-color: mediumturquoise;
+    border: 1.5px solid mediumturquoise;
+    color: white;
+}
+
+.book > .remove {
+    background-color: rgb(253, 182, 169);
+    border: 1.5px solid tomato;
+    color: red;
+    margin-bottom: 21.440px;
+}
+
+.book > .remove:hover {
+    background-color: tomato;
+    color: white;
+}
+
+.book > .read {
+    background-color: palegreen;
+    border: 1.5px solid green;
+    color: green;
+}
+
+.book > .read:hover {
+    background-color: green;
+    border: 1.5px solid green;
+    color: white;
+}
+
+.formDiv {
+    position: absolute;
+    top: 0px; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.form {
+    padding: 32px;
+    background-color: white;
+    border-radius: 5px;
+    width: clamp(250px, 270px, 300px);
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > input {
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgrey;
+    height: 30px;
+    padding-left: 8px;
+}
+
+form > input[type='submit'] {
+    background-color: palegreen;
+    color: rgb(0, 70, 0);
+    height: 35px;
+}
+
+form > input[type='submit']:hover {
+    background-color: green;
+    color: rgb(201, 201, 201);
+}

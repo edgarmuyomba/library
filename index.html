@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="nav">
+        <p>library</p>
+        <p class="count"></p>
+    </div>
+    <div class="main">
+        <span>
+            <button class="newBook">
+                <img src="icons/plus-thick.svg" style="width: 20px; margin: 2px;">New Book</button>
+        </span>
+        <div class="books">
+            <!-- <div class="book">
+                <h1 class="title">Deep Work</h1>
+                <h3 class="author">Cal Newport</h3>
+                <p class="pages">362 pages</p>
+                <button class="status read">unread</button>
+                <button class="remove">Remove</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="formDiv" style="display: none;">
+        <div class="form">
+            <img src="icons/book-open-outline.svg" style="width: 100px;"/>
+            <form action="">
+                <input type="text" placeholder="title" required>
+                <input type="text" placeholder="author" required>
+                <input type="number" placeholder="pages" required>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
